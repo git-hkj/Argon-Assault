@@ -80,33 +80,23 @@ public class PlayerController : MonoBehaviour
 
         if (Input.GetButton("Fire1"))
         {
-            ActivateLaser();
+            
+            EngageLasers(true);
         }
         else
         {
-            DeactivateLaser();
+            EngageLasers(false);
         }
     }
 
-    //To switch on the laser whenever the keys are engaged
-    private void ActivateLaser()
+    //To switch laser on whenever the keys are engaged
+    private void EngageLasers(bool fireStatus)
     {
         foreach (GameObject barrel in lasers)
         {
-            var emissionModule = barrel.GetComponent<ParticleSystem.EmissionModule>();
-            emissionModule.enabled = true;
+            var emissionModule = barrel.GetComponent<ParticleSystem>().emission;
+            emissionModule.enabled = fireStatus;
         }
     }
 
-    //To switch off the laser once the keys are released
-    private void DeactivateLaser()
-    {
-        foreach (GameObject barrel in lasers)
-        {
-            var emissionModule = barrel.GetComponent<ParticleSystem.EmissionModule>();
-            emissionModule.enabled = false;
-        }
-    }
-
-    
 }

@@ -462,7 +462,7 @@ PlayableDirector:
   m_SceneBindings:
   - key: {fileID: 7537409323814645439, guid: a239a680ee8d7b441b4a8779554a9ed7, type: 2}
     value: {fileID: 94071753}
-  - key: {fileID: 7121417523961036545, guid: a239a680ee8d7b441b4a8779554a9ed7, type: 2}
+  - key: {fileID: -3450919441996391946, guid: a239a680ee8d7b441b4a8779554a9ed7, type: 2}
     value: {fileID: 1594700945}
   m_ExposedReferences:
     m_References: []
@@ -522,19 +522,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 251077614522635885, guid: d1f1eab5ed37f924281ee5daa7f999a4, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: 42
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 251077614522635885, guid: d1f1eab5ed37f924281ee5daa7f999a4, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: -265
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 251077614522635885, guid: d1f1eab5ed37f924281ee5daa7f999a4, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: -39
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 251077614522635891, guid: d1f1eab5ed37f924281ee5daa7f999a4, type: 3}
       propertyPath: m_Name
       value: Game Rig
+      objectReference: {fileID: 0}
+    - target: {fileID: 8169676071168108516, guid: d1f1eab5ed37f924281ee5daa7f999a4, type: 3}
+      propertyPath: yRange
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 8169676071168108516, guid: d1f1eab5ed37f924281ee5daa7f999a4, type: 3}
       propertyPath: fireLaser.m_Id
