@@ -6,6 +6,9 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     [SerializeField] float controlSpeed = 10.0f;
+    [SerializeField] private float xRange = 5f;
+    [SerializeField] float yRange = 1.0f;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -19,13 +22,15 @@ public class PlayerController : MonoBehaviour
         float verticalThrow  = Input.GetAxis("Vertical");
 
         float xDelta  = horizontalPush * Time.deltaTime *controlSpeed;
-        float newXpos = transform.localPosition.x + xDelta;
+        float rawXPos = transform.localPosition.x + xDelta;
+        float clampedXPos = Mathf.Clamp(rawXPos, -xRange, xRange);
 
         float yDelta  = verticalThrow * Time.deltaTime * controlSpeed;
-        float newYpos = transform.localPosition.y + yDelta;
+        float rawYPos = transform.localPosition.y + yDelta;
+        float clampedYPos = Mathf.Clamp(rawYPos, -yRange, yRange);
 
 
-        transform.localPosition = new Vector3(newXpos, newYpos, transform.localPosition.z);
+        transform.localPosition = new Vector3(clampedXPos, clampedYPos, transform.localPosition.z);
 
     }
 }
