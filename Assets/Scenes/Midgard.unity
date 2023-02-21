@@ -151,6 +151,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   loadDelay: 1
+  explosionEffect: {fileID: 1108106127}
 --- !u!1 &669404376 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6742615212384607308, guid: d1f1eab5ed37f924281ee5daa7f999a4, type: 3}
@@ -333,6 +334,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!198 &1108106127 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 7920144431367381205, guid: d1f1eab5ed37f924281ee5daa7f999a4, type: 3}
+  m_PrefabInstance: {fileID: 251077615310447357}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1201687808
 GameObject:
   m_ObjectHideFlags: 0
