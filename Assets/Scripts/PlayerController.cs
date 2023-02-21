@@ -32,7 +32,7 @@ public class PlayerController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        Debug.Log("Welcome to Argon Assault");
     }
 
    // Update is called once per frame
@@ -45,7 +45,7 @@ public class PlayerController : MonoBehaviour
     }
 
     //To process a translating movement of the ship using input keys
-    private void ProcessTranslation()
+    void ProcessTranslation()
     {
         horizontalPush = Input.GetAxis("Horizontal");
         verticalThrow = Input.GetAxis("Vertical");
@@ -63,7 +63,7 @@ public class PlayerController : MonoBehaviour
     }
 
     //To process a rotating movement of the ship using input keys
-    private void ProcessRotation()
+    void ProcessRotation()
     {
 
         //pitch due to local position and control
@@ -95,7 +95,7 @@ public class PlayerController : MonoBehaviour
     }
 
     //To switch laser on whenever the keys are engaged
-    private void EngageLasers(bool fireStatus)
+    void EngageLasers(bool fireStatus)
     {
         foreach (GameObject barrel in lasers)
         {

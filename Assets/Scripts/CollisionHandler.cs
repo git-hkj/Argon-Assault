@@ -8,12 +8,14 @@ public class CollisionHandler : MonoBehaviour
     [SerializeField] float loadDelay = 1.0f;
     [SerializeField] ParticleSystem explosionEffect;
 
+    //To process trigger events
     void OnTriggerEnter(Collider other)
     {
         StartCrashSequence();
     }
 
-    private void StartCrashSequence()
+    //To engage the crash sequence
+    void StartCrashSequence()
     {
         Debug.Log("*** May Day !!! May Day !!! ***");
         explosionEffect.Play();
@@ -23,6 +25,7 @@ public class CollisionHandler : MonoBehaviour
         Invoke("ReloadLevel",loadDelay);
     }
 
+    //To restart the level upon crashing
     void ReloadLevel()
     {
         int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
