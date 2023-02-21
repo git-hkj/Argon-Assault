@@ -11,12 +11,12 @@ public class Enemy : MonoBehaviour
     [SerializeField] int hitPoints = 2;
 
     ScoreBoard scoreboard;
-    GameObject parent;
+    GameObject parentGameObject;
 
     void Start()
     {
         scoreboard = FindObjectOfType<ScoreBoard>();
-        parent = GameObject.FindWithTag("ShortLived");
+        parentGameObject = GameObject.FindWithTag("ShortLived");
         AddRigidbody();
     }
     
@@ -24,7 +24,7 @@ public class Enemy : MonoBehaviour
     void OnParticleCollision(GameObject other)
     {
         GameObject vFx = Instantiate(hitVFX, transform.position, Quaternion.identity);
-        vFx.transform.parent = parent.transform;
+        vFx.transform.parent = parentGameObject.transform;
         ProcessHit(other);
         if (hitPoints < 1)
         {
@@ -32,19 +32,19 @@ public class Enemy : MonoBehaviour
         }
     }
 
-    //To process the hit and track scores
+    //To process the hit 
     void ProcessHit(GameObject other)
     {
         hitPoints--;
         Debug.Log($"I'm hit by {other.gameObject.name}");
-        scoreboard.ScoreUpdate(scoreValue);
     }
-    
-    //To process destruction of the enemy
+
+    //To process destruction of the enemy and track scores
     void KillEnemy()
     {
+        scoreboard.ScoreUpdate(scoreValue);
         GameObject vFx = Instantiate(deathVFX, transform.position, Quaternion.identity);
-        vFx.transform.parent = parent.transform;
+        vFx.transform.parent = parentGameObject.transform;
         Destroy(gameObject);
     }
 
