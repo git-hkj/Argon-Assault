@@ -123,11 +123,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!95 &94071753 stripped
-Animator:
-  m_CorrespondingSourceObject: {fileID: 6026022495322059065, guid: ac300ee2b6ea39f4e881259b67e42ad8, type: 3}
-  m_PrefabInstance: {fileID: 6026022495414672112}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &94071757 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6026022495322059069, guid: ac300ee2b6ea39f4e881259b67e42ad8, type: 3}
@@ -304,6 +299,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy ball  (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 6026022495322059066, guid: ac300ee2b6ea39f4e881259b67e42ad8, type: 3}
+      propertyPath: m_Radius
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 6026022495322059069, guid: ac300ee2b6ea39f4e881259b67e42ad8, type: 3}
       propertyPath: m_RootOrder
       value: 5
@@ -349,6 +348,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6026022495322059070, guid: ac300ee2b6ea39f4e881259b67e42ad8, type: 3}
+      propertyPath: hitVFX
+      value: 
+      objectReference: {fileID: 3200836327345539238, guid: 7ea8598c0be33f0468e9218e1b444433, type: 3}
+    - target: {fileID: 6026022495322059070, guid: ac300ee2b6ea39f4e881259b67e42ad8, type: 3}
       propertyPath: parent
       value: 
       objectReference: {fileID: 1244431117}
@@ -356,6 +359,14 @@ PrefabInstance:
       propertyPath: deathVFX
       value: 
       objectReference: {fileID: 3200836327345539238, guid: 9bf05276c51da7841b53679636437bfa, type: 3}
+    - target: {fileID: 6026022495322059070, guid: ac300ee2b6ea39f4e881259b67e42ad8, type: 3}
+      propertyPath: hitPoints
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6026022495322059070, guid: ac300ee2b6ea39f4e881259b67e42ad8, type: 3}
+      propertyPath: scoreValue
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ac300ee2b6ea39f4e881259b67e42ad8, type: 3}
 --- !u!4 &1293566240 stripped
@@ -373,6 +384,10 @@ PrefabInstance:
     - target: {fileID: 6026022495322059064, guid: ac300ee2b6ea39f4e881259b67e42ad8, type: 3}
       propertyPath: m_Name
       value: Enemy ball  (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6026022495322059066, guid: ac300ee2b6ea39f4e881259b67e42ad8, type: 3}
+      propertyPath: m_Radius
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 6026022495322059069, guid: ac300ee2b6ea39f4e881259b67e42ad8, type: 3}
       propertyPath: m_RootOrder
@@ -419,6 +434,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6026022495322059070, guid: ac300ee2b6ea39f4e881259b67e42ad8, type: 3}
+      propertyPath: hitVFX
+      value: 
+      objectReference: {fileID: 3200836327345539238, guid: 7ea8598c0be33f0468e9218e1b444433, type: 3}
+    - target: {fileID: 6026022495322059070, guid: ac300ee2b6ea39f4e881259b67e42ad8, type: 3}
       propertyPath: parent
       value: 
       objectReference: {fileID: 1244431117}
@@ -426,6 +445,10 @@ PrefabInstance:
       propertyPath: deathVFX
       value: 
       objectReference: {fileID: 3200836327345539238, guid: 9bf05276c51da7841b53679636437bfa, type: 3}
+    - target: {fileID: 6026022495322059070, guid: ac300ee2b6ea39f4e881259b67e42ad8, type: 3}
+      propertyPath: scoreValue
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ac300ee2b6ea39f4e881259b67e42ad8, type: 3}
 --- !u!4 &1411307727 stripped
@@ -494,6 +517,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6026022495322059070, guid: ac300ee2b6ea39f4e881259b67e42ad8, type: 3}
+      propertyPath: hitVFX
+      value: 
+      objectReference: {fileID: 3200836327345539238, guid: 7ea8598c0be33f0468e9218e1b444433, type: 3}
+    - target: {fileID: 6026022495322059070, guid: ac300ee2b6ea39f4e881259b67e42ad8, type: 3}
       propertyPath: parent
       value: 
       objectReference: {fileID: 1244431117}
@@ -501,6 +528,14 @@ PrefabInstance:
       propertyPath: deathVFX
       value: 
       objectReference: {fileID: 3200836327345539238, guid: 9bf05276c51da7841b53679636437bfa, type: 3}
+    - target: {fileID: 6026022495322059070, guid: ac300ee2b6ea39f4e881259b67e42ad8, type: 3}
+      propertyPath: hitPoints
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6026022495322059070, guid: ac300ee2b6ea39f4e881259b67e42ad8, type: 3}
+      propertyPath: scoreValue
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ac300ee2b6ea39f4e881259b67e42ad8, type: 3}
 --- !u!4 &1708798430 stripped
@@ -541,7 +576,7 @@ PlayableDirector:
   m_InitialTime: 0
   m_SceneBindings:
   - key: {fileID: 7537409323814645439, guid: a239a680ee8d7b441b4a8779554a9ed7, type: 2}
-    value: {fileID: 94071753}
+    value: {fileID: 0}
   - key: {fileID: -3450919441996391946, guid: a239a680ee8d7b441b4a8779554a9ed7, type: 2}
     value: {fileID: 1594700945}
   m_ExposedReferences:
@@ -571,6 +606,18 @@ PrefabInstance:
     - target: {fileID: 6026022495322059064, guid: ac300ee2b6ea39f4e881259b67e42ad8, type: 3}
       propertyPath: m_Name
       value: Enemy ball  (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6026022495322059066, guid: ac300ee2b6ea39f4e881259b67e42ad8, type: 3}
+      propertyPath: m_Radius
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6026022495322059066, guid: ac300ee2b6ea39f4e881259b67e42ad8, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6026022495322059067, guid: ac300ee2b6ea39f4e881259b67e42ad8, type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6026022495322059069, guid: ac300ee2b6ea39f4e881259b67e42ad8, type: 3}
       propertyPath: m_RootOrder
@@ -617,6 +664,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6026022495322059070, guid: ac300ee2b6ea39f4e881259b67e42ad8, type: 3}
+      propertyPath: hitVFX
+      value: 
+      objectReference: {fileID: 3200836327345539238, guid: 7ea8598c0be33f0468e9218e1b444433, type: 3}
+    - target: {fileID: 6026022495322059070, guid: ac300ee2b6ea39f4e881259b67e42ad8, type: 3}
       propertyPath: parent
       value: 
       objectReference: {fileID: 1244431117}
@@ -624,6 +675,14 @@ PrefabInstance:
       propertyPath: deathVFX
       value: 
       objectReference: {fileID: 3200836327345539238, guid: 9bf05276c51da7841b53679636437bfa, type: 3}
+    - target: {fileID: 6026022495322059070, guid: ac300ee2b6ea39f4e881259b67e42ad8, type: 3}
+      propertyPath: hitPoints
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6026022495322059070, guid: ac300ee2b6ea39f4e881259b67e42ad8, type: 3}
+      propertyPath: scoreValue
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ac300ee2b6ea39f4e881259b67e42ad8, type: 3}
 --- !u!4 &1803719990 stripped
@@ -641,6 +700,10 @@ PrefabInstance:
     - target: {fileID: 6026022495322059064, guid: ac300ee2b6ea39f4e881259b67e42ad8, type: 3}
       propertyPath: m_Name
       value: Enemy ball  (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6026022495322059066, guid: ac300ee2b6ea39f4e881259b67e42ad8, type: 3}
+      propertyPath: m_Radius
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 6026022495322059069, guid: ac300ee2b6ea39f4e881259b67e42ad8, type: 3}
       propertyPath: m_RootOrder
@@ -687,6 +750,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6026022495322059070, guid: ac300ee2b6ea39f4e881259b67e42ad8, type: 3}
+      propertyPath: hitVFX
+      value: 
+      objectReference: {fileID: 3200836327345539238, guid: 7ea8598c0be33f0468e9218e1b444433, type: 3}
+    - target: {fileID: 6026022495322059070, guid: ac300ee2b6ea39f4e881259b67e42ad8, type: 3}
       propertyPath: parent
       value: 
       objectReference: {fileID: 1244431117}
@@ -694,6 +761,10 @@ PrefabInstance:
       propertyPath: deathVFX
       value: 
       objectReference: {fileID: 3200836327345539238, guid: 9bf05276c51da7841b53679636437bfa, type: 3}
+    - target: {fileID: 6026022495322059070, guid: ac300ee2b6ea39f4e881259b67e42ad8, type: 3}
+      propertyPath: scoreValue
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ac300ee2b6ea39f4e881259b67e42ad8, type: 3}
 --- !u!4 &2026713390 stripped
@@ -780,6 +851,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy ball  (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 6026022495322059066, guid: ac300ee2b6ea39f4e881259b67e42ad8, type: 3}
+      propertyPath: m_Radius
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 6026022495322059069, guid: ac300ee2b6ea39f4e881259b67e42ad8, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -825,6 +900,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6026022495322059070, guid: ac300ee2b6ea39f4e881259b67e42ad8, type: 3}
+      propertyPath: hitVFX
+      value: 
+      objectReference: {fileID: 3200836327345539238, guid: 7ea8598c0be33f0468e9218e1b444433, type: 3}
+    - target: {fileID: 6026022495322059070, guid: ac300ee2b6ea39f4e881259b67e42ad8, type: 3}
       propertyPath: parent
       value: 
       objectReference: {fileID: 1244431117}
@@ -832,6 +911,10 @@ PrefabInstance:
       propertyPath: deathVFX
       value: 
       objectReference: {fileID: 3200836327345539238, guid: 9bf05276c51da7841b53679636437bfa, type: 3}
+    - target: {fileID: 6026022495322059070, guid: ac300ee2b6ea39f4e881259b67e42ad8, type: 3}
+      propertyPath: scoreValue
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ac300ee2b6ea39f4e881259b67e42ad8, type: 3}
 --- !u!4 &2052556082 stripped
@@ -1045,6 +1128,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6026022495322059070, guid: ac300ee2b6ea39f4e881259b67e42ad8, type: 3}
+      propertyPath: hitVFX
+      value: 
+      objectReference: {fileID: 3200836327345539238, guid: 7ea8598c0be33f0468e9218e1b444433, type: 3}
+    - target: {fileID: 6026022495322059070, guid: ac300ee2b6ea39f4e881259b67e42ad8, type: 3}
       propertyPath: parent
       value: 
       objectReference: {fileID: 1244431117}
@@ -1052,6 +1139,10 @@ PrefabInstance:
       propertyPath: deathVFX
       value: 
       objectReference: {fileID: 3200836327345539238, guid: 9bf05276c51da7841b53679636437bfa, type: 3}
+    - target: {fileID: 6026022495322059070, guid: ac300ee2b6ea39f4e881259b67e42ad8, type: 3}
+      propertyPath: scoreValue
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ac300ee2b6ea39f4e881259b67e42ad8, type: 3}
 --- !u!1001 &8203308179856843048
