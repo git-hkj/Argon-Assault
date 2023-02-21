@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 2097480770061826815}
   - component: {fileID: 2122274206629144883}
   - component: {fileID: 2116323190361121167}
-  - component: {fileID: 6197980460056990339}
   - component: {fileID: 7460377754657362798}
   m_Layer: 0
   m_Name: Blue Mine
@@ -29,7 +28,7 @@ Transform:
   m_GameObject: {fileID: 2091934287878644939}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 61.617973, y: 108.89156, z: 83.21585}
-  m_LocalScale: {x: 10, y: 10, z: 10}
+  m_LocalScale: {x: 5, y: 5, z: 5}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2091318394288728385}
@@ -86,19 +85,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!135 &6197980460056990339
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2091934287878644939}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 1.6
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &7460377754657362798
 MonoBehaviour:
   m_ObjectHideFlags: 0

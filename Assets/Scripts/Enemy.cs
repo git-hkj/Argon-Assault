@@ -7,22 +7,24 @@ public class Enemy : MonoBehaviour
 {
     [SerializeField] GameObject deathVFX;
     [SerializeField] GameObject hitVFX;
-    [SerializeField] Transform parent;
     [SerializeField] int scoreValue = 10;
     [SerializeField] int hitPoints = 2;
 
     ScoreBoard scoreboard;
+    GameObject parent;
 
     void Start()
     {
         scoreboard = FindObjectOfType<ScoreBoard>();
+        parent = GameObject.FindWithTag("ShortLived");
+        AddRigidbody();
     }
     
     //To process the collision
     void OnParticleCollision(GameObject other)
     {
         GameObject vFx = Instantiate(hitVFX, transform.position, Quaternion.identity);
-        vFx.transform.parent = parent;
+        vFx.transform.parent = parent.transform;
         ProcessHit(other);
         if (hitPoints < 1)
         {
@@ -42,9 +44,14 @@ public class Enemy : MonoBehaviour
     void KillEnemy()
     {
         GameObject vFx = Instantiate(deathVFX, transform.position, Quaternion.identity);
-        vFx.transform.parent = parent;
+        vFx.transform.parent = parent.transform;
         Destroy(gameObject);
     }
 
-   
+    //to add rigidbody to the object
+    void AddRigidbody()
+    {
+        gameObject.AddComponent<Rigidbody>();
+        GetComponent<Rigidbody>().useGravity = false;
+    }
 }
