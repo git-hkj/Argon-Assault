@@ -132,4 +132,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   deathVFX: {fileID: 0}
+  hitVFX: {fileID: 0}
   parent: {fileID: 0}
+  scoreValue: 10
+  hitPoints: 2
