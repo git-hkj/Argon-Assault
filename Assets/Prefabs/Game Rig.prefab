@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 251077614522635884}
   m_Layer: 0
   m_Name: Game Rig
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -65,6 +65,7 @@ GameObject:
   - component: {fileID: 251077616235745161}
   - component: {fileID: 251077616235745166}
   - component: {fileID: 251077616235745167}
+  - component: {fileID: 2887185897249191947}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -138,6 +139,66 @@ AudioListener:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 251077616235745164}
   m_Enabled: 1
+--- !u!114 &2887185897249191947
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 251077616235745164}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 948f4100a11a5c24981795d21301da5c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  volumeTrigger: {fileID: 251077616235745161}
+  volumeLayer:
+    serializedVersion: 2
+    m_Bits: 64
+  stopNaNPropagation: 1
+  finalBlitToCameraTarget: 0
+  antialiasingMode: 1
+  temporalAntialiasing:
+    jitterSpread: 0.75
+    sharpness: 0.25
+    stationaryBlending: 0.95
+    motionBlending: 0.85
+  subpixelMorphologicalAntialiasing:
+    quality: 2
+  fastApproximateAntialiasing:
+    fastMode: 1
+    keepAlpha: 0
+  fog:
+    enabled: 1
+    excludeSkybox: 1
+  debugLayer:
+    lightMeter:
+      width: 512
+      height: 256
+      showCurves: 1
+    histogram:
+      width: 512
+      height: 256
+      channel: 3
+    waveform:
+      exposure: 0.12
+      height: 256
+    vectorscope:
+      size: 256
+      exposure: 0.12
+    overlaySettings:
+      linearDepth: 0
+      motionColorIntensity: 4
+      motionGridSize: 64
+      colorBlindnessType: 0
+      colorBlindnessStrength: 1
+  m_Resources: {fileID: 11400000, guid: d82512f9c8e5d4a4d938b575d47f88d4, type: 2}
+  m_ShowToolkit: 0
+  m_ShowCustomSorter: 0
+  breakBeforeColorGrading: 0
+  m_BeforeTransparentBundles: []
+  m_BeforeStackBundles: []
+  m_AfterStackBundles: []
 --- !u!1001 &8169676070850866471
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -146,13 +207,37 @@ PrefabInstance:
     m_TransformParent: {fileID: 251077614522635885}
     m_Modifications:
     - target: {fileID: 317246147, guid: 58734c41594668840bd3847f2b5ce512, type: 3}
+      propertyPath: xRange
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 317246147, guid: 58734c41594668840bd3847f2b5ce512, type: 3}
+      propertyPath: yRange
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 317246147, guid: 58734c41594668840bd3847f2b5ce512, type: 3}
+      propertyPath: controlSpeed
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 317246147, guid: 58734c41594668840bd3847f2b5ce512, type: 3}
       propertyPath: fireLaser.m_Id
-      value: 1f7c3d87-ee3c-45a2-8772-7c714572eea6
+      value: 0fbdee0b-d648-4d70-8c24-1bd9760724c1
       objectReference: {fileID: 0}
     - target: {fileID: 317246147, guid: 58734c41594668840bd3847f2b5ce512, type: 3}
       propertyPath: fireLaser.m_Name
       value: Fire Laser
       objectReference: {fileID: 0}
+    - target: {fileID: 317246147, guid: 58734c41594668840bd3847f2b5ce512, type: 3}
+      propertyPath: lasers.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 317246147, guid: 58734c41594668840bd3847f2b5ce512, type: 3}
+      propertyPath: lasers.Array.data[0]
+      value: 
+      objectReference: {fileID: 6341055299718071181}
+    - target: {fileID: 317246147, guid: 58734c41594668840bd3847f2b5ce512, type: 3}
+      propertyPath: lasers.Array.data[1]
+      value: 
+      objectReference: {fileID: 6742615212384607308}
     - target: {fileID: 7584822000608053182, guid: 58734c41594668840bd3847f2b5ce512, type: 3}
       propertyPath: m_Name
       value: SS-17
@@ -203,8 +288,42 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 58734c41594668840bd3847f2b5ce512, type: 3}
+--- !u!1 &1739012288227879577 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7584822000608053182, guid: 58734c41594668840bd3847f2b5ce512, type: 3}
+  m_PrefabInstance: {fileID: 8169676070850866471}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &317246149
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1739012288227879577}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70720f5e7146e2b4d8a347da3e88a4c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  loadDelay: 1
+  explosionEffect: {fileID: 7920144431367381205}
 --- !u!4 &1739012288227879654 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7584822000608053185, guid: 58734c41594668840bd3847f2b5ce512, type: 3}
+  m_PrefabInstance: {fileID: 8169676070850866471}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &6341055299718071181 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2783067515207478954, guid: 58734c41594668840bd3847f2b5ce512, type: 3}
+  m_PrefabInstance: {fileID: 8169676070850866471}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &6742615212384607308 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3238670691952193899, guid: 58734c41594668840bd3847f2b5ce512, type: 3}
+  m_PrefabInstance: {fileID: 8169676070850866471}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &7920144431367381205 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 2056601864272858610, guid: 58734c41594668840bd3847f2b5ce512, type: 3}
   m_PrefabInstance: {fileID: 8169676070850866471}
   m_PrefabAsset: {fileID: 0}
