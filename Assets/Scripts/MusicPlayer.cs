@@ -8,6 +8,7 @@ public class MusicPlayer : MonoBehaviour
     void Awake()
     {
         int numMusicPlayer = FindObjectsOfType<MusicPlayer>().Length;
+
         //Singleton pattern
         if (numMusicPlayer > 1)
         {
