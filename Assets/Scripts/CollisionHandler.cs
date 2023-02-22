@@ -8,9 +8,22 @@ public class CollisionHandler : MonoBehaviour
     [SerializeField] float loadDelay = 1.0f;
     [SerializeField] ParticleSystem explosionEffect;
 
+    private bool collisionDisabled = false;
+    private bool isTransitioning = false;
+
+    // Update is called once per frame
+    void Update()
+    {
+        EnableCheatCodes();
+    }
+
     //To process trigger events
     void OnTriggerEnter(Collider other)
     {
+        if (isTransitioning || collisionDisabled)
+        {
+            return;
+        }
         StartCrashSequence();
     }
 
@@ -30,5 +43,18 @@ public class CollisionHandler : MonoBehaviour
     {
         int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
         SceneManager.LoadScene(currentSceneIndex);
+    }
+
+    //to activate the cheat codes fo debugging
+    void EnableCheatCodes()
+    {
+        if (Input.GetKeyDown(KeyCode.L))
+        {
+            ReloadLevel();
+        }
+        else if (Input.GetKeyDown(KeyCode.C))
+        {
+            collisionDisabled = !collisionDisabled;   //toggle collision
+        }
     }
 }
