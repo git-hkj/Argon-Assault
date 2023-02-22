@@ -408,6 +408,11 @@ ParticleSystem:
   m_CorrespondingSourceObject: {fileID: 7920144431367381205, guid: d1f1eab5ed37f924281ee5daa7f999a4, type: 3}
   m_PrefabInstance: {fileID: 251077615310447357}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1344863549 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3969821300207470940, guid: dfd8e91e1ecfae34daa271bb50f0eb6d, type: 3}
+  m_PrefabInstance: {fileID: 8256666364285424444}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1364393222
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -622,14 +627,19 @@ PlayableDirector:
     - 2cf0df733a37e384b8a99f42a01b9efa: {fileID: 132228880}
     - b29180efa447fe049a249ee4a42bf293: {fileID: 2042241966}
     - 3d9337bebc275e442ad40f1cb5ab1361: {fileID: 897222205}
+    - f86e6afdd2aaa0a49ab5c8d1667b6c3e: {fileID: 1344863549}
     - 3694939aa9dac2f44a0916c79391c056: {fileID: 2042241966}
     - db9efe8320d7414499a108dab5c0b52b: {fileID: 2042241966}
     - 1b216ab0d97b2044ebd3c991d2b3f05f: {fileID: 2042241966}
+    - 21acc9b8ed783a342b6e690cf1a86dd1: {fileID: 1344863549}
     - 01102bcc1fc50f141877b3bf68e54bb5: {fileID: 645800986098671613}
     - 2a18cb4d31dcbe24980f0e228cd4dd27: {fileID: 897222205}
+    - 4284f058e28b1f94a8a7faf8cb5d89c8: {fileID: 1344863549}
     - d82f7a1c86e9ab340a2b305f9ffa148a: {fileID: 1364393224}
     - 2f2a77873f05bab4780d6b98d06802f4: {fileID: 1644811583}
     - c13d86a0ee826ec4ea60ef38e1b65471: {fileID: 897222205}
+    - ba589643d3776a843a6354e740303d12: {fileID: 1344863549}
+    - 7285b2f623f281146a7657960990b969: {fileID: 1344863549}
 --- !u!4 &1783254830
 Transform:
   m_ObjectHideFlags: 0
