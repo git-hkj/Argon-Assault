@@ -7,7 +7,7 @@ public class CollisionHandler : MonoBehaviour
 {
     [SerializeField] float loadDelay = 1.0f;
     [SerializeField] ParticleSystem explosionEffect;
-
+    
     private bool collisionDisabled = false;
     private bool isTransitioning = false;
 

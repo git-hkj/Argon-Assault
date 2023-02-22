@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 2122274206629144883}
   - component: {fileID: 2116323190361121167}
   - component: {fileID: 7460377754657362798}
+  - component: {fileID: 5717321893282508599}
   m_Layer: 0
   m_Name: Blue Mine
   m_TagString: Untagged
@@ -97,11 +98,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bd5ac0974cf15b4448ffb978e4859276, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  deathVFX: {fileID: 3200836327345539238, guid: 9bf05276c51da7841b53679636437bfa, type: 3}
+  deathFX: {fileID: 3200836327345539238, guid: d2c744d78799a47488ef7b2f880fbb22, type: 3}
   hitVFX: {fileID: 3200836327345539238, guid: 7ea8598c0be33f0468e9218e1b444433, type: 3}
-  parent: {fileID: 0}
   scoreValue: 10
   hitPoints: 1
+--- !u!135 &5717321893282508599
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2091934287878644939}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 1.7
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &2094062469795133635
 GameObject:
   m_ObjectHideFlags: 0
